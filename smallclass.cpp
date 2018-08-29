@@ -1,3 +1,7 @@
+/*
+Ezra Skwarka
+Jessie Whitaker
+*/
 //small class called DayOfYear
 #include <iostream>
 #include "stdlib.h"
@@ -32,15 +36,15 @@ int main( )
     cout << "Today's date is ";
     today.output( );
 
-    bach_birthday.set(3, 21);
-    cout << "J. S. Bach's birthday is ";
+    bach_birthday.set(4, 16); //Changed to Count Chocula's Birthday
+    cout << "Count Chocula birthday is "; //Changed from Bach to Choc
     bach_birthday.output( );
 
     if ( today.get_month( ) == bach_birthday.get_month( ) &&
                today.get_day( ) == bach_birthday.get_day( ) )
-        cout << "Happy Birthday Johann Sebastian!\n";
+        cout << "Happy Birthday Count Chocula!\n";
     else
-        cout << "Happy Unbirthday Johann Sebastian!\n";
+        cout << "Unhappy Day Count Chocula!\n";
 
     return 0;
 }
